@@ -83,7 +83,9 @@ public class ArcadeCar : MonoBehaviour
     RaycastHit[] wheelRayHits = new RaycastHit[16];
 
 
-    
+
+
+
 
     void Start()
     {
@@ -360,17 +362,24 @@ public class ArcadeCar : MonoBehaviour
     void Update()
     {
         ApplyVisual();
-        Debug.Log(isHandBrake);
+
 
         if (isHandBrake)
         {
-            skidEmmiter(true);
+            skidEmmiter(true); 
+             
+                AudioManager.instance.Play("Drift");
+             
         }
         else
         {
+            AudioManager.instance.Stop("Drift");
             skidEmmiter(false);
         }
     }
+
+
+
 
     private void skidEmmiter(bool t)
     {
