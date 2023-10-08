@@ -416,7 +416,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8656585643061938089}
   - component: {fileID: 4501419769428881624}
-  - component: {fileID: 6323163794435173443}
   m_Layer: 0
   m_Name: Pine_D
   m_TagString: Untagged
@@ -475,16 +474,3 @@ LODGroup:
     renderers:
     - renderer: {fileID: 367192420645468052}
   m_Enabled: 1
---- !u!65 &6323163794435173443
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8316334779356437779}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.2310028, y: 4.1781297, z: 1.5382805}
-  m_Center: {x: 0.115501404, y: 1.5890648, z: -0.053380966}
